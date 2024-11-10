@@ -5,44 +5,71 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px;
 }
-table {
-    border-collapse: collapse;
-    width: 100%;
-    font-family: Arial, sans-serif;
-    margin-top: 20px;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-th {
-    background-color: #4CAF50;
-    color: white;
-}
+
 .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 80%;
+    width: 100%;
     max-width: 800px;
+    margin: 0 auto;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
 .form-group {
     margin-bottom: 10px;
 }
+
 input[type="text"], input[type="number"], input[type="date"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
 }
+
 button {
     padding: 10px 15px;
     background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
