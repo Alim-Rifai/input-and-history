@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catat Perkembangan Kesehatan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Catat Perkembangan Kesehatan</h2>
+    <div class="form-group">
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" required>
+    </div>
+    <div class="form-group">
+        <label for="tinggi">Tinggi Badan (cm):</label>
+        <input type="number" id="tinggi" required>
+    </div>
+    <div class="form-group">
+        <label for="berat">Berat Badan (kg):</label>
+        <input type="number" id="berat" required>
+    </div>
+    <div class="form-group">
+        <label for="tekanan">Tekanan Darah:</label>
+        <input type="text" id="tekanan" required>
+    </div>
+    <button onclick="tambahData()">Tambahkan Data</button>
+    
+    <!-- Link ke halaman riwayat -->
+    <p><a href="riwayat.html">Lihat Riwayat Perkembangan Kesehatan</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

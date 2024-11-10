@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Perkembangan Kesehatan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Riwayat Perkembangan Kesehatan</h2>
+    <table>
+        <tr>
+            <th>Tanggal</th>
+            <th>Tinggi Badan (cm)</th>
+            <th>Berat Badan (kg)</th>
+            <th>Tekanan Darah</th>
+            <th>IMT</th>
+            <th>Status</th>
+        </tr>
+        <tbody id="data-table">
+            <!-- Data akan ditambahkan di sini -->
+        </tbody>
+    </table>
+
+    <!-- Link kembali ke halaman input -->
+    <p><a href="index.html">Kembali ke Halaman Input</a></p>
+</div>
+
+<script src="script.js"></script>
+<script>
+    // Tampilkan data saat halaman riwayat dimuat
+    document.addEventListener("DOMContentLoaded", tampilkanData);
+</script>
+</body>
+</html>
